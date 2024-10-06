@@ -1,15 +1,15 @@
 1. Which transmission media provides the highest transmission speed in a network? *
-coaxial cable
-twisted pair cable
-optical fiber
-electrical cable
+a) coaxial cable
+b) twisted pair cable
+c) optical fiber
+d) electrical cable
 Correct answer: C
 
 2. Which of the following tasks is not done by data link layer? *
-framing
-error control
-flow control
-channel coding
+a) framing
+b) error control
+c) flow control
+d) channel coding
 Correct answer: D
 
 3. Which sublayer of the data link layer performs data link functions that depend upon the type of medium? *

@@ -9,7 +9,8 @@ def load_mcqs(filename):
         lines = item.split('\n')
         question = lines[0].strip()
         options = [line.strip() for line in lines[1:-1]]
-        correct_answer = lines[-1].strip().split()[-1]  # Assuming "Correct answer" is on the last line
+        # Update correct_answer extraction
+        correct_answer = lines[-1].strip().split()[-1].upper()  # Store as 'A', 'B', 'C', or 'D'
         questions.append((question, options, correct_answer))
     
     return questions
@@ -22,14 +23,20 @@ def quiz_user(questions):
         print(f"\n{question}")
         for idx, option in enumerate(options):
             print(f"{idx + 1}. {option}")
-        
+
         user_answer = input(f"Your answer (1-{len(options)}): ")
         
-        if options[int(user_answer) - 1].strip().lower() == correct_answer.strip().lower():
-            print("Correct!")
-            score += 1
+        # Validate input
+        if user_answer.isdigit() and 1 <= int(user_answer) <= len(options):
+            # Convert to correct answer letter based on user input
+            user_answer_letter = chr(int(user_answer) + 64)  # 1 -> 'A', 2 -> 'B', etc.
+            if user_answer_letter == correct_answer:
+                print("Correct!")
+                score += 1
+            else:
+                print(f"Wrong! The correct answer is: {correct_answer}")
         else:
-            print(f"Wrong! The correct answer is: {correct_answer}")
+            print("Invalid input. Please enter a number corresponding to the options.")
 
     print(f"\nYour final score: {score}/{len(questions)}")
 
@@ -54,3 +61,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

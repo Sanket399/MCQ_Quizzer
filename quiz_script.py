@@ -1,5 +1,4 @@
 import random
-import os
 
 def load_mcqs(filename):
     with open(filename, 'r') as file:

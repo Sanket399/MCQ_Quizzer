@@ -1,3 +1,4 @@
+
 1. Which transmission media provides the highest transmission speed in a network? *
 a) coaxial cable
 b) twisted pair cable
@@ -122,7 +123,7 @@ a) RIPv1
 b) RIPv2
 c) EIGRP
 d) OSPF
-Correct answer: B
+Correct answer: D
 
 19. URL stands for ________ *
 a) unique reference label
@@ -347,4 +348,264 @@ b) It is the list of autonomous systems (AS) that a route has traversed
 c) It is used to prevent routing loops within a single autonomous system
 d) It represents the cost of the route based on link speed
 Correct answer: B
+
+51. Which of the following can be suited as a definition of an Access List?  
+a) Set of protocols to define traffic in a router  
+b) Set of rules used for packet filtering  
+c) Set of guidelines that every router should follow  
+d) Set of features that every router contains  
+Correct answer: B  
+
+52. Which of the following set is used to identify Access Lists?  
+a) Number and name  
+b) Number and special characters  
+c) Names and binary numbers  
+d) Special character and binary numbers  
+Correct answer: A  
+
+53. Which of the following aspects can’t be managed by a standard access list?  
+a) Allowing a Network  
+b) Denying a sub-network  
+c) Denying a service  
+d) Allowing a host  
+Correct answer: C  
+
+54. Which set of things will be taken into account in order to filter the packets in an extended access list?  
+a) Source IP address and destination IP address  
+b) Source IP address, protocol and port number  
+c) Source IP address  
+d) Source IP address, protocol, port number and destination IP address  
+Correct answer: D  
+
+55. One interface of a router can have multiple access lists.  
+a) True  
+b) False  
+Correct answer: A  
+
+56. What will happen if an empty access list is assigned to an interface?  
+a) It will allow all the packets into the network  
+b) It will deny all the packets from entering the network  
+c) It will allow only few packets into the network  
+d) It does nothing  
+Correct answer: B  
+
+57. What is the range of standard access list, if it is numbered?  
+a) 1 to 99  
+b) 99 to 199  
+c) 1 to 99 or 1300 to 1999  
+d) 99 to 199 or 2000 to 3000  
+Correct answer: A  
+
+58. What is the range of numbered extended access list?  
+a) 1 to 99 or 1300 to 1999  
+b) 1 to 99 or 1300 to 2699  
+c) 100 to 199 or 1999 to 2699  
+d) 100 to 199 or 2000 to 2699  
+Correct answer: D  
+
+59. Which of the following cannot be an advantage of an access list?  
+a) It furnishes the security  
+b) It helps the network to perform well  
+c) It speeds up the packet transmission  
+d) It manages the traffic over the network  
+Correct answer: C  
+
+60. What is the main advantage of Port Access Control List?  
+a) It is implemented on layer 3 devices  
+b) It supports outbound and inbound traffic  
+c) It can have 2 access lists on a layer 2 interface  
+d) It can be configured on Ether-Channel also  
+Correct answer: B  
+
+61. Which command would you place on the interface connected to the Internet?
+A. ip nat inside
+B. ip nat outside
+C. ip outside global
+D. ip inside local
+Answer: Option B
+
+62. Which command will show you all the translations active on your router?
+A. show ip nat translations
+B. show ip nat statistics
+C. debug ip nat
+D. clear ip nat translations *
+
+63. Which command would you place on the interface on a private network?
+A. ip nat inside
+B. ip nat outside
+C. ip outside global
+D. ip inside local
+Answer: Option A
+
+64. Pat Address Translation is also termed what?
+A. NAT Fast
+B. NAT Static
+C. NAT Overload
+D. Overloading Static
+Answer: Option C
+
+65. When creating a pool of global addresses, which of the following can be used instead of the netmask command?
+A. / (slash notation)
+B. prefix-length
+C. no mask
+D. block-size
+Answer: Option A
+
+66. Which of the following would be a good starting point for troubleshooting if your router is not translating?
+A. Reboot.
+B. Call Cisco.
+C. Check your interfaces for the correct configuration.
+D. Run the debug all command.
+Answer: Option C
+
+67. Which command will show you the summary of the NAT configuration?
+A. show ip nat translations
+B. show ip nat statistics
+C. debug ip nat
+D. clear ip nat translations *
+Answer: Option B
+
+68. Which of the following is considered to be the destination host before translation?
+A. Inside local
+B. Outside local
+C. Inside global
+D. Outside global
+Answer: Option B
+
+69. Which of the following is considered to be the address after translation?
+A. Inside local
+B. Outside local
+C. Inside global
+D. Outside global
+Answer: Option C
+
+70. Which are considered the methods of NAT? (Select all that apply)
+1.. Static
+2.. IP NAT pool
+3.. Dynamic
+4.. NAT double-translation
+5.. Overload
+A. 1 and 6
+B. 3 only
+C. 1, 3 and 5
+D. All of the above
+Answer: Option C
+
+71. Which command will allow you to see real-time translations on your router?
+A.
+show ip nat translations
+B.
+show ip nat statistics
+C.
+debug ip nat
+D.
+clear ip nat translations *
+Answer: Option C
+
+72. Which of the following would be good reasons to run NAT?
+1. You need to connect to the Internet and your hosts don't have globally unique IP addresses.
+2. You change to a new ISP that requires you to renumber your network.
+3. You don't want any hosts connecting to the Internet.
+4. You require two intranets with duplicate addresses to merge.
+A.
+1, 2 and 4
+B.
+2 and 4
+C.
+3 only
+D.
+All of the above
+Answer: Option A
+
+73. Which of the following are advantages of using NAT?
+1. Translation introduces switching path delays.
+2. Conserves legally registered addresses.
+3. Causes loss of end-to-end IP traceability.
+4. Increases flexibility when connecting to the Internet.
+5. Certain applications will not function with NAT enabled.
+6. Reduces address overlap occurrence.
+A.
+1, 3 and 4
+B.
+3, 5 and 6
+C.
+5 and 6
+D.
+2, 4 and 6
+Answer: Option D
+
+74. Which of the following is considered to be the address before translation?
+A.
+Inside local
+B.
+Outside local
+C.
+Inside global
+D.
+Outside global
+Answer: Option A
+
+75. Which of the following are disadvantages of using NAT?
+1. Translation introduces switching path delays.
+2. Conserves legally registered addresses.
+3. Causes loss of end-to-end IP traceability.
+4. Increases flexibility when connecting to the Internet.
+5. Certain applications will not function with NAT enabled.
+6. Reduces address overlap occurrence.
+A.
+1, 3 and 5
+B.
+3 and 4
+C.
+2, 4 and 5
+D.
+1 and 3
+Answer: Option A
+
+76. Which of the following is considered to be the destination host after translation?
+A.
+Inside local
+B.
+Outside local
+C.
+Inside global
+D.
+Outside global
+Answer: Option C
+
+77. Which command will create a dynamic pool named Todd that will provide you with 30 global addresses?
+A.
+ip nat pool Todd 171.16.10.65 171.16.10.94 net 255.255.255.240
+B.
+ip nat pool Todd 171.16.10.65 171.16.10.94 net 255.255.255.224
+C.
+ip nat pool todd 171.16.10.65 171.16.10.94 net 255.255.255.224
+D.
+ip nat pool Todd 171.16.10.1 171.16.10.254 net 255.255.255.0
+Answer: Option B
+
+78. Which command will clear all the translations active on your router?
+A.
+show ip nat translations
+B.
+show ip nat statistics
+C.
+debug ip nat
+D.
+clear ip nat translations *
+Answer: Option D
+
+79. Which of the following is considered to be the destination host after translation?
+A.
+Inside local
+B.
+Outside local
+C.
+Inside global
+D.
+Outside global
+Answer: Option D
+
+
+
 

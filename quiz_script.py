@@ -1,60 +1,56 @@
 import random
-import os
 
-# Function to load questions from a file
-def load_questions(file_name):
+def load_mcqs(filename):
+    with open(filename, 'r') as file:
+        content = file.read().strip().split('\n\n')
+    
     questions = []
-    with open(file_name, 'r') as file:
-        content = file.read().strip().split('\n\n')  # Split by double newlines
-        for item in content:
-            lines = item.strip().split('\n')
-            question = lines[0]
-            options = lines[1:5]
-            answer = lines[5].split(': ')[1]  # Get the correct answer
-            questions.append((question, options, answer))
+    for item in content:
+        lines = item.split('\n')
+        question = lines[0].strip()
+        options = [line.strip() for line in lines[1:-1]]
+        correct_answer = lines[-1].strip().split()[-1]  # Assuming "Correct answer" is on the last line
+        questions.append((question, options, correct_answer))
+    
     return questions
 
-# Function to run the quiz
-def quiz(questions):
+def quiz_user(questions):
+    random.shuffle(questions)
     score = 0
-    random.shuffle(questions)  # Shuffle questions for randomness
     
     for question, options, correct_answer in questions:
-        print(question)
-        for idx, option in enumerate(options, start=1):
-            print(f"{idx}. {option}")
-
-        # Get user's answer
-        answer = input("Your answer (1-4): ")
-        if options[int(answer) - 1] == correct_answer:
-            print("Correct!\n")
+        print(f"\n{question}")
+        for idx, option in enumerate(options):
+            print(f"{idx + 1}. {option}")
+        
+        user_answer = input(f"Your answer (1-{len(options)}): ")
+        
+        if options[int(user_answer) - 1].strip().lower() == correct_answer.strip().lower():
+            print("Correct!")
             score += 1
         else:
-            print(f"Wrong! The correct answer is: {correct_answer}\n")
-            
-    print(f"Your final score is: {score}/{len(questions)}")
+            print(f"Wrong! The correct answer is: {correct_answer}")
 
-# Main function to run the program
+    print(f"\nYour final score: {score}/{len(questions)}")
+
 def main():
-    subject_files = {
-        "FCN": "FCN_mcqs.md",
-        "Networking": "networking_mcqs.md",
-        "Security": "security_mcqs.md",
-        # Add more subjects here as needed
+    subjects = {
+        '1': 'FCN_mcqs.md',
+        '2': 'Networking_mcqs.md',  # Assuming you have this file
+        '3': 'Security_mcqs.md',     # Assuming you have this file
     }
-
+    
     print("Select a subject:")
-    for idx, subject in enumerate(subject_files.keys(), start=1):
-        print(f"{idx}. {subject}")
+    for key, subject in subjects.items():
+        print(f"{key}. {subject[:-3]}")  # Displaying without .md
+    
+    choice = input("Enter the number of your choice: ")
+    
+    if choice in subjects:
+        questions = load_mcqs(subjects[choice])
+        quiz_user(questions)
+    else:
+        print("Invalid choice. Please select a valid subject.")
 
-    subject_choice = int(input("Enter the number of your choice: ")) - 1
-    selected_subject = list(subject_files.keys())[subject_choice]
-    mcq_file = subject_files[selected_subject]
-
-    # Load and quiz
-    questions = load_questions(mcq_file)
-    quiz(questions)
-
-# Start the program
 if __name__ == "__main__":
     main()

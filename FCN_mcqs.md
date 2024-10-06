@@ -417,195 +417,159 @@ c) It can have 2 access lists on a layer 2 interface
 d) It can be configured on Ether-Channel also  
 Correct answer: B  
 
-61. Which command would you place on the interface connected to the Internet?
-A. ip nat inside
-B. ip nat outside
-C. ip outside global
-D. ip inside local
-Answer: Option B
+61. Which command would you place on the interface connected to the Internet?  
+a) ip nat inside  
+b) ip nat outside  
+c) ip outside global  
+d) ip inside local  
+Correct answer: B  
 
-62. Which command will show you all the translations active on your router?
-A. show ip nat translations
-B. show ip nat statistics
-C. debug ip nat
-D. clear ip nat translations *
+62. Which command will show you all the translations active on your router?  
+a) show ip nat translations  
+b) show ip nat statistics  
+c) debug ip nat  
+d) clear ip nat translations *  
+Correct answer: A  
 
-63. Which command would you place on the interface on a private network?
-A. ip nat inside
-B. ip nat outside
-C. ip outside global
-D. ip inside local
-Answer: Option A
+63. Which command would you place on the interface on a private network?  
+a) ip nat inside  
+b) ip nat outside  
+c) ip outside global  
+d) ip inside local  
+Correct answer: A  
 
-64. Pat Address Translation is also termed what?
-A. NAT Fast
-B. NAT Static
-C. NAT Overload
-D. Overloading Static
-Answer: Option C
+64. Pat Address Translation is also termed what?  
+a) NAT Fast  
+b) NAT Static  
+c) NAT Overload  
+d) Overloading Static  
+Correct answer: C  
 
-65. When creating a pool of global addresses, which of the following can be used instead of the netmask command?
-A. / (slash notation)
-B. prefix-length
-C. no mask
-D. block-size
-Answer: Option A
+65. When creating a pool of global addresses, which of the following can be used instead of the netmask command?  
+a) / (slash notation)  
+b) prefix-length  
+c) no mask  
+d) block-size  
+Correct answer: A  
 
-66. Which of the following would be a good starting point for troubleshooting if your router is not translating?
-A. Reboot.
-B. Call Cisco.
-C. Check your interfaces for the correct configuration.
-D. Run the debug all command.
-Answer: Option C
+66. Which of the following would be a good starting point for troubleshooting if your router is not translating?  
+a) Reboot.  
+b) Call Cisco.  
+c) Check your interfaces for the correct configuration.  
+d) Run the debug all command.  
+Correct answer: C  
 
-67. Which command will show you the summary of the NAT configuration?
-A. show ip nat translations
-B. show ip nat statistics
-C. debug ip nat
-D. clear ip nat translations *
-Answer: Option B
+67. Which command will show you the summary of the NAT configuration?  
+a) show ip nat translations  
+b) show ip nat statistics  
+c) debug ip nat  
+d) clear ip nat translations *  
+Correct answer: B  
 
-68. Which of the following is considered to be the destination host before translation?
-A. Inside local
-B. Outside local
-C. Inside global
-D. Outside global
-Answer: Option B
+68. Which of the following is considered to be the destination host before translation?  
+a) Inside local  
+b) Outside local  
+c) Inside global  
+d) Outside global  
+Correct answer: B  
 
-69. Which of the following is considered to be the address after translation?
-A. Inside local
-B. Outside local
-C. Inside global
-D. Outside global
-Answer: Option C
+69. Which of the following is considered to be the address after translation?  
+a) Inside local  
+b) Outside local  
+c) Inside global  
+d) Outside global  
+Correct answer: C  
 
-70. Which are considered the methods of NAT? (Select all that apply)
-1.. Static
-2.. IP NAT pool
-3.. Dynamic
-4.. NAT double-translation
-5.. Overload
-A. 1 and 6
-B. 3 only
-C. 1, 3 and 5
-D. All of the above
-Answer: Option C
+70. Which are considered the methods of NAT? (Select all that apply)  
+1. Static  
+2. IP NAT pool  
+3. Dynamic  
+4. NAT double-translation  
+5. Overload  
+a) 1 and 6  
+b) 3 only  
+c) 1, 3 and 5  
+d) All of the above  
+Correct answer: C  
 
-71. Which command will allow you to see real-time translations on your router?
-A.
-show ip nat translations
-B.
-show ip nat statistics
-C.
-debug ip nat
-D.
-clear ip nat translations *
-Answer: Option C
+71. Which command will allow you to see real-time translations on your router?  
+a) show ip nat translations  
+b) show ip nat statistics  
+c) debug ip nat  
+d) clear ip nat translations *  
+Correct answer: C  
 
-72. Which of the following would be good reasons to run NAT?
-1. You need to connect to the Internet and your hosts don't have globally unique IP addresses.
-2. You change to a new ISP that requires you to renumber your network.
-3. You don't want any hosts connecting to the Internet.
-4. You require two intranets with duplicate addresses to merge.
-A.
-1, 2 and 4
-B.
-2 and 4
-C.
-3 only
-D.
-All of the above
-Answer: Option A
+72. Which of the following would be good reasons to run NAT?  
+1. You need to connect to the Internet and your hosts don't have globally unique IP addresses.  
+2. You change to a new ISP that requires you to renumber your network.  
+3. You don't want any hosts connecting to the Internet.  
+4. You require two intranets with duplicate addresses to merge.  
+a) 1, 2 and 4  
+b) 2 and 4  
+c) 3 only  
+d) All of the above  
+Correct answer: A  
 
-73. Which of the following are advantages of using NAT?
-1. Translation introduces switching path delays.
-2. Conserves legally registered addresses.
-3. Causes loss of end-to-end IP traceability.
-4. Increases flexibility when connecting to the Internet.
-5. Certain applications will not function with NAT enabled.
-6. Reduces address overlap occurrence.
-A.
-1, 3 and 4
-B.
-3, 5 and 6
-C.
-5 and 6
-D.
-2, 4 and 6
-Answer: Option D
+73. Which of the following are advantages of using NAT?  
+1. Translation introduces switching path delays.  
+2. Conserves legally registered addresses.  
+3. Causes loss of end-to-end IP traceability.  
+4. Increases flexibility when connecting to the Internet.  
+5. Certain applications will not function with NAT enabled.  
+6. Reduces address overlap occurrence.  
+a) 1, 3 and 4  
+b) 3, 5 and 6  
+c) 5 and 6  
+d) 2, 4 and 6  
+Correct answer: D  
 
-74. Which of the following is considered to be the address before translation?
-A.
-Inside local
-B.
-Outside local
-C.
-Inside global
-D.
-Outside global
-Answer: Option A
+74. Which of the following is considered to be the address before translation?  
+a) Inside local  
+b) Outside local  
+c) Inside global  
+d) Outside global  
+Correct answer: A  
 
-75. Which of the following are disadvantages of using NAT?
-1. Translation introduces switching path delays.
-2. Conserves legally registered addresses.
-3. Causes loss of end-to-end IP traceability.
-4. Increases flexibility when connecting to the Internet.
-5. Certain applications will not function with NAT enabled.
-6. Reduces address overlap occurrence.
-A.
-1, 3 and 5
-B.
-3 and 4
-C.
-2, 4 and 5
-D.
-1 and 3
-Answer: Option A
+75. Which of the following are disadvantages of using NAT?  
+1. Translation introduces switching path delays.  
+2. Conserves legally registered addresses.  
+3. Causes loss of end-to-end IP traceability.  
+4. Increases flexibility when connecting to the Internet.  
+5. Certain applications will not function with NAT enabled.  
+6. Reduces address overlap occurrence.  
+a) 1, 3 and 5  
+b) 3 and 4  
+c) 2, 4 and 5  
+d) 1 and 3  
+Correct answer: A  
 
-76. Which of the following is considered to be the destination host after translation?
-A.
-Inside local
-B.
-Outside local
-C.
-Inside global
-D.
-Outside global
-Answer: Option C
+76. Which of the following is considered to be the destination host after translation?  
+a) Inside local  
+b) Outside local  
+c) Inside global  
+d) Outside global  
+Correct answer: C  
 
-77. Which command will create a dynamic pool named Todd that will provide you with 30 global addresses?
-A.
-ip nat pool Todd 171.16.10.65 171.16.10.94 net 255.255.255.240
-B.
-ip nat pool Todd 171.16.10.65 171.16.10.94 net 255.255.255.224
-C.
-ip nat pool todd 171.16.10.65 171.16.10.94 net 255.255.255.224
-D.
-ip nat pool Todd 171.16.10.1 171.16.10.254 net 255.255.255.0
-Answer: Option B
+77. Which command will create a dynamic pool named Todd that will provide you with 30 global addresses?  
+a) ip nat pool Todd 171.16.10.65 171.16.10.94 net 255.255.255.240  
+b) ip nat pool Todd 171.16.10.65 171.16.10.94 net 255.255.255.224  
+c) ip nat pool todd 171.16.10.65 171.16.10.94 net 255.255.255.224  
+d) ip nat pool Todd 171.16.10.1 171.16.10.254 net 255.255.255.0  
+Correct answer: B  
 
-78. Which command will clear all the translations active on your router?
-A.
-show ip nat translations
-B.
-show ip nat statistics
-C.
-debug ip nat
-D.
-clear ip nat translations *
-Answer: Option D
+78. Which command will clear all the translations active on your router?  
+a) show ip nat translations  
+b) show ip nat statistics  
+c) debug ip nat  
+d) clear ip nat translations *  
+Correct answer: D  
 
-79. Which of the following is considered to be the destination host after translation?
-A.
-Inside local
-B.
-Outside local
-C.
-Inside global
-D.
-Outside global
-Answer: Option D
-
+79. Which of the following is considered to be the destination host after translation?  
+a) Inside local  
+b) Outside local  
+c) Inside global  
+d) Outside global  
+Correct answer: D  
 
 
 
